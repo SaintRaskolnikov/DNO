@@ -1,0 +1,49 @@
+{
+  "doenca": "Cólera",
+  "criterios_clinicos": {
+    "colera": {
+      "descricao": "Pelo menos um dos seguintes critérios clínicos",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Vómitos"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "colera": {
+      "minimo_requerido": 3,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Vibrio cholerae a partir de uma amostra biológica",
+          "1": "Demonstração da presença do antigénio O1 ou O139 no material isolado",
+          "2": "Demonstração da presença da enterotoxina da cólera ou do gene da enterotoxina da cólera no material isolado"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a uma fonte comum",
+      "1": "Transmissão entre seres humanos",
+      "2": "Exposição a alimentos ou água contaminados",
+      "3": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
