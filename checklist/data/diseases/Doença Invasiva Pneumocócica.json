@@ -1,0 +1,37 @@
+{
+  "doenca": "Doença Invasiva Pneumocócica",
+  "criterios_clinicos": {
+    "irrelevante": {
+      "descricao": "Critérios clínicos não são relevantes para efeitos de vigilância epidemiológica.",
+      "minimo_requerido": 0,
+      "criterios": {}
+    }
+  },
+  "criterios_laboratoriais": {
+    "pneumococo": {
+      "minimo_requerido": 1,
+      "nota": "Dever-se-á proceder à serotipagem das estirpes isoladas.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do Streptococcus pneumoniae a partir de um produto biológico normalmente estéril",
+          "1": "Deteção de ácidos nucleicos do Streptococcus pneumoniae a partir de um produto biológico normalmente estéril",
+          "2": "Deteção do antigénio do Streptococcus pneumoniae a partir de um produto biológico normalmente estéril"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

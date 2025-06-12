@@ -1,0 +1,51 @@
+{
+  "doenca": "Difteria",
+  "criterios_clinicos": {
+    "formas_clinicas": {
+      "descricao": "Qualquer pessoa que apresente pelo menos uma das seguintes formas clínicas",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Difteria respiratória clássica: doença das vias respiratórias superiores com laringite, nasofaringite ou amigdalite E membranas/pseudomembranas aderentes",
+        "1": "Difteria respiratória ligeira: doença das vias respiratórias superiores com laringite, nasofaringite ou amigdalite SEM membranas/pseudomembranas aderentes",
+        "2": "Difteria cutânea: lesão cutânea",
+        "3": "Difteria de outros locais: lesão da conjuntiva ou das mucosas"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "difteria": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Corynebacterium diphtheriae ou Corynebacterium ulcerans produtores de toxinas a partir de uma amostra biológica"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)",
+      "1": "Transmissão de animais a seres humanos"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "forma_clinica_especifica": "Difteria respiratória clássica"
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

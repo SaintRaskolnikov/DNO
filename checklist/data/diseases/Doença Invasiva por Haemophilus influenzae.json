@@ -1,0 +1,36 @@
+{
+  "doenca": "Doença Invasiva por Haemophilus influenzae",
+  "criterios_clinicos": {
+    "irrelevante": {
+      "descricao": "Critérios clínicos não são relevantes para efeitos de vigilância epidemiológica.",
+      "minimo_requerido": 0,
+      "criterios": {}
+    }
+  },
+  "criterios_laboratoriais": {
+    "haemophilus": {
+      "minimo_requerido": 1,
+      "nota": "Dever-se-á proceder à serotipagem das estirpes isoladas.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Haemophilus influenzae a partir de um produto biológico normalmente estéril",
+          "1": "Deteção de ácidos nucleicos de Haemophilus influenzae a partir de um produto biológico normalmente estéril"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

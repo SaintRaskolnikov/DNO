@@ -1,0 +1,52 @@
+{
+  "doenca": "Febre Escaro-Nodular (Rickettsiose)",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Pessoa com febre e pelo menos um dos seguintes critérios.",
+      "condicao_base": {
+        "0": "Febre"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Artralgias",
+        "1": "Cefaleias e mialgias de início súbito",
+        "2": "Erupção maculopapular não pruriginosa ou petéquias",
+        "3": "Linfadenopatia regional",
+        "4": "Lesão cutânea primária típica, resultante da picada da carraça"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "rickettsiose": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Rickettsia conorii",
+          "1": "Deteção de ácidos nucleicos de Rickettsia conorii em tecidos cutâneos e sangue",
+          "2": "Deteção de Rickettsia spp. por imunohistoquímica em tecidos cutâneos",
+          "3": "Deteção de anticorpos IgM ou IgG (seroconversão) contra Rickettsia do grupo das febres exantemáticas (imunofluorescência, ELISA)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Confirmação de picada por carraça, nos sete dias anteriores ao início dos sintomas"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

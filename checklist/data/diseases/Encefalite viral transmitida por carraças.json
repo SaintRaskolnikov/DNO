@@ -1,0 +1,50 @@
+{
+  "doenca": "Encefalite viral transmitida por carraças",
+  "criterios_clinicos": {
+    "irrelevante": {
+      "minimo_requerido": 1,
+      "criterios": {
+        "0":"Sintomas sugestivos de inflamação do Sistema Nervoso Central (ex: meningite, meningoencefalite, encefalomielite, radiculites)."
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "encefalite_carracas": {
+      "minimo_requerido": 1,
+      "nota": "Resultados serológicos devem ser interpretados tendo em conta exposições anteriores a outras infeções por flavivírus e estado vacinal. Casos confirmados devem ser validados por ensaio de seroneutralização ou equivalente.",
+      "grupos": {
+        "confirmado": {
+          "0": "Deteção de anticorpos IgM e IgG específicos do vírus da encefalite transmitida por carraças no sangue",
+          "1": "Deteção de anticorpos IgM específicos do vírus da encefalite transmitida por carraças no líquor",
+          "2": "Seroconversão ou quadruplicação do título de anticorpos específicos em amostras séricas emparelhadas",
+          "3": "Deteção de ácidos nucleicos do vírus da encefalite transmitida por carraças numa amostra biológica",
+          "4": "Isolamento do vírus da encefalite transmitida por carraças a partir de uma amostra biológica"
+        },
+        "provavel": {
+          "0": "Deteção de anticorpos IgM específicos do vírus da encefalite transmitida por carraça numa única amostra de soro"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão de animais a seres humanos"
+    }
+  },
+  "classificacao_caso": {
+
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

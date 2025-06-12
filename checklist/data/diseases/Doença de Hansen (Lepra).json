@@ -1,0 +1,63 @@
+{
+  "doenca": "Doença de Hansen (Lepra)",
+  "criterios_clinicos": {
+    "lepra_lepromatosa_multibacilar": {
+      "descricao": "Pelo menos um dos cinco critérios seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Nódulos, pápulas, máculas e infiltrações difusas, bilaterais e simétricas, normalmente numerosas (mais do que cinco) e extensas",
+        "1": "Obstrução respiratória",
+        "2": "Epistáxis",
+        "3": "Irite",
+        "4": "Queratite"
+      }
+    },
+    "lepra_tuberculoide_paucibacilar": {
+      "descricao": "Pelo menos um dos dois critérios seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Lesões cutâneas bilaterais assimétricas, menos numerosas (até cinco), circunscritas, anestésicas ou hipostésicas",
+        "1": "Envolvimento grave dos nervos periféricos"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "lepra": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Demonstração de bacilos ácido-álcool resistentes num esfregaço de lesão cutânea",
+          "1": "Demonstração de bacilos ácido-álcool resistentes numa biópsia da pele ou nervo"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Ligação epidemiológica com um ou mais casos prováveis ou confirmados",
+      "1": "Antecedentes de viagem ou de residência, dentro do período de incubação, numa área onde a doença seja endémica"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}

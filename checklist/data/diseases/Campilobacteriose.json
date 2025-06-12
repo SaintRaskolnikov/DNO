@@ -1,0 +1,52 @@
+{
+  "doenca": "Campilobacteriose",
+  "criterios_clinicos": {
+    "criterios_gerais": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos três critérios seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Dores abdominais",
+        "2": "Febre"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "campilobacteriose": {
+    "minimo_requerido": 1,
+    "nota": "Deverá proceder-se à identificação da espécie e aos testes de sensibilidade aos antimicrobianos.",
+    "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Campylobacter spp. a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de Campylobacter spp. numa amostra biológica"
+        },
+        "provavel": {}
+    }
+  }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão de animais a seres humanos",
+      "1": "Transmissão entre seres humanos",
+      "2": "Exposição a uma fonte comum",
+      "3": "Exposição a alimentos ou água contaminados",
+      "4": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
