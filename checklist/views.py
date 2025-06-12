@@ -6,14 +6,14 @@ from django.utils.text import slugify
 
 from dno import settings
 
-STEPS_JSON_PATH = os.path.join(settings.BASE_DIR, 'checklist', 'static', 'steps', 'steps.json')
+STEPS_JSON_PATH = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'steps', 'steps.json')
 
 def landing(request):
     """
     Render the landing page with a list of diseases.
     Filter diseases by search query if present.
     """
-    diseases_dir = os.path.join(settings.BASE_DIR, 'checklist', 'static', 'diseases')
+    diseases_dir = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'diseases')
 
     # List all JSON files in the directory and strip the .json extension to get disease names
     try:
@@ -49,13 +49,13 @@ def checklist_view(request, dno):
         steps = []
 
     selected_disease = dno.lower()
-    json_file_path = os.path.join(settings.BASE_DIR, 'checklist', 'static', 'diseases', f"{selected_disease}.json")
+    json_file_path = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'diseases', f"{selected_disease}.json")
 
     try:
         with open(json_file_path, 'r', encoding='utf-8') as json_file:
             criteria = json.load(json_file)
     except FileNotFoundError:
-        return HttpResponseNotFound(f"Não foi encontrado ficheiro de critérios para a doença: {selected_disease} no caminho {json_file_path}")
+        return HttpResponseNotFound(f"Não foi encontrado ficheiro de critérios para a doença: {selected_disease}")
 
     # Extract criteria
     criterios_clinicos_raw = criteria.get("criterios_clinicos", {})
