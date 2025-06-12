@@ -1,5 +1,6 @@
 import json
 import os
+from urllib.parse import quote
 from django.http import HttpResponseNotFound, JsonResponse
 from django.shortcuts import render
 from checklist.utils import load_disease_data
@@ -16,24 +17,27 @@ def landing(request):
     """
     diseases_dir = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'diseases')
 
-    # List all JSON files in the directory and strip the .json extension to get disease names
     try:
         all_files = os.listdir(diseases_dir)
     except FileNotFoundError:
         all_files = []
 
-    diseases = [os.path.splitext(f)[0].capitalize() for f in all_files if f.endswith('.json')]
+    # Remove .json and extract disease names
+    diseases = [f.replace(".json", "") for f in all_files if f.endswith(".json")]
 
-    query = request.GET.get('default-search', '')  # get search text from input named default-search
-    print(f"Search query: {query}")  # Debugging line to check the search query
+    query = request.GET.get('default-search', '').strip()
+    print(f"Search query: {query}")
 
+    # Filtra resultados
     if query:
-        # filter diseases case-insensitive substring match
-        results = [d for d in diseases if query.lower() in d.lower()]
+        filtered = [d for d in diseases if query.lower() in d.lower()]
     else:
-        results = diseases  # show all if no search query
+        filtered = diseases
 
-    return render(request, 'landing.html', {'results': results})
+    # Gera (nome, url_segura) para cada doença
+    results = [(d, f"/checklist/{quote(d)}") for d in filtered]
+
+    return render(request, 'landing.html', {'results': results, 'query': query})
 
 
 
