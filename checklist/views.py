@@ -51,11 +51,9 @@ def checklist_view(request, dno):
     selected_disease = dno.lower()
     json_file_path = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'diseases', f"{selected_disease}.json")
 
-    try:
-        with open(json_file_path, 'r', encoding='utf-8') as json_file:
-            criteria = json.load(json_file)
-    except FileNotFoundError:
-        return HttpResponseNotFound(f"Não foi encontrado ficheiro de critérios para a doença: {selected_disease} no diretório {json_file_path}")
+
+    with open(json_file_path, 'r', encoding='utf-8') as json_file:
+        criteria = json.load(json_file)
 
     # Extract criteria
     criterios_clinicos_raw = criteria.get("criterios_clinicos", {})
