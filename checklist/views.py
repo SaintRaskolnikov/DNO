@@ -3,6 +3,7 @@ import os
 from django.http import HttpResponseNotFound, JsonResponse
 from django.shortcuts import render
 from django.utils.text import slugify
+from checklist.utils import load_disease_data
 
 from dno import settings
 
@@ -49,11 +50,10 @@ def checklist_view(request, dno):
         steps = []
 
     selected_disease = dno.lower()
-    json_file_path = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'diseases', f"{selected_disease}.json")
+    criteria = load_disease_data(selected_disease)
+    if not criteria:
+        return HttpResponseNotFound(f"Critérios para a doença '{selected_disease}' não encontrados.")
 
-
-    with open(json_file_path, 'r', encoding='utf-8') as json_file:
-        criteria = json.load(json_file)
 
     # Extract criteria
     criterios_clinicos_raw = criteria.get("criterios_clinicos", {})
