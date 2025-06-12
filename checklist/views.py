@@ -55,7 +55,7 @@ def checklist_view(request, dno):
         with open(json_file_path, 'r', encoding='utf-8') as json_file:
             criteria = json.load(json_file)
     except FileNotFoundError:
-        return HttpResponseNotFound(f"Não foi encontrado ficheiro de critérios para a doença: {selected_disease}")
+        return HttpResponseNotFound(f"Não foi encontrado ficheiro de critérios para a doença: {selected_disease} no diretório {json_file_path}")
 
     # Extract criteria
     criterios_clinicos_raw = criteria.get("criterios_clinicos", {})
