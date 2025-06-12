@@ -49,7 +49,7 @@ def checklist_view(request, dno):
         # lidar com erro de parsing
         steps = []
 
-    selected_disease = dno.lower()
+    selected_disease = dno
     criteria = load_disease_data(selected_disease)
     if not criteria:
         return HttpResponseNotFound(f"Critérios para a doença '{selected_disease}' não encontrados.")
