@@ -2,9 +2,9 @@ import json
 import os
 from django.http import HttpResponseNotFound, JsonResponse
 from django.shortcuts import render
-from django.utils.text import slugify
 from checklist.utils import load_disease_data
-
+from urllib.parse import unquote
+from django.utils.text import slugify
 from dno import settings
 
 STEPS_JSON_PATH = os.path.join(settings.BASE_DIR, 'checklist', 'data', 'steps', 'steps.json')
@@ -49,7 +49,9 @@ def checklist_view(request, dno):
         # lidar com erro de parsing
         steps = []
 
-    selected_disease = dno
+    dno_decoded = unquote(dno)  # Decodifica %C3%A7 etc.
+    selected_disease = dno_decoded.strip()
+
     criteria = load_disease_data(selected_disease)
     if not criteria:
         return HttpResponseNotFound(f"Critérios para a doença '{selected_disease}' não encontrados.")
