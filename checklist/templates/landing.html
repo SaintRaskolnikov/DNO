@@ -32,13 +32,16 @@
 
 <div class="mx-auto max-w-4xl mt-6 px-4">
   <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-    {% for result in results %}
-    <a href="{% url 'checklist' result %}" class="block max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ result }}</h5>
+    {% for name, link in results %}
+    <a href="{{ link }}" class="block max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ name }}</h5>
     </a>
+    {% empty %}
+    <p class="text-gray-600 dark:text-gray-300">Nenhuma doença encontrada.</p>
     {% endfor %}
   </div>
 </div>
+
 
 
     
