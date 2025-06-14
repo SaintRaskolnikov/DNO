@@ -32,6 +32,7 @@
     "confirmado": {
       "cli": 0,
       "epi": 0,
+      "lab_prov": 0,
       "lab_conf": 1
     }
   }
