@@ -1,0 +1,61 @@
+{
+  "doenca": "Gripe A (H5N1) ou por outro vírus da Gripe de origem animal",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Febre E pelo menos um dos seguintes critérios",
+      "condicao_base": {
+        "0": "Febre"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Sinais e sintomas de infeção respiratória aguda",
+        "1": "Morte por doença respiratória aguda idiopática"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "gripe_animal": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "provavel": {
+          "0": "Teste positivo para vírus da Gripe A (H5) ou outro vírus da gripe de origem animal realizado por laboratório não inscrito na rede comunitária de referência da UE"
+        },
+        "confirmado": {
+          "0": "Teste positivo para vírus da Gripe A (H5) ou outro vírus da gripe de origem animal realizado por laboratório nacional de referência da UE ou por centro de colaboração da OMS"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos, por contacto próximo (menos de 1 m) com caso provável ou confirmado",
+      "1": "Exposição laboratorial ao vírus da Gripe A (H5N1) ou outro vírus da gripe de origem animal",
+      "2": "Contacto próximo com animal infectado (exceto aves de capoeira ou selvagens)",
+      "3": "Residir ou ter visitado área com suspeita ou confirmação de circulação do vírus",
+      "4": "Contacto próximo com aves de capoeira domésticas ou selvagens doentes ou mortas na área afetada",
+      "5": "Estar em casa ou exploração agrícola na área afetada com aves doentes/mortas notificadas no mês anterior"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
