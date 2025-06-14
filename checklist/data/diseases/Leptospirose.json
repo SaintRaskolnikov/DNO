@@ -1,0 +1,58 @@
+{
+  "doenca": "Leptospirose",
+  "criterios_clinicos": {
+    "descricao": "Qualquer pessoa com febre; ou que preencha pelo menos dois dos restantes critérios",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Febre",
+      "1": "Calafrios",
+      "2": "Cefaleias",
+      "3": "Mialgias",
+      "4": "Derrame conjuntival",
+      "5": "Manifestações hemorrágicas cutâneas e das mucosas",
+      "6": "Erupções cutâneas",
+      "7": "Icterícia",
+      "8": "Miocardite",
+      "9": "Meningite",
+      "10": "Compromisso da função renal",
+      "11": "Sintomas respiratórios, nomeadamente hemoptise"
+    }
+  },
+  "criterios_laboratoriais": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Isolamento de Leptospira interrogans ou de outras Leptospira spp. patogénicas, a partir de uma amostra biológica",
+      "1": "Deteção de ácidos nucleicos de outras Leptospira spp. patogénicas, numa amostra biológica",
+      "2": "Demonstração da presença de Leptospira interrogans ou de outras Leptospira spp. patogénicas por imunofluorescência numa amostra biológica",
+      "3": "Resposta imunitária específica à Leptospira interrogans ou a outras Leptospira spp. patogénicas"
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão de animais a seres humanos",
+      "1": "Exposição ambiental",
+      "2": "Exposição a uma fonte comum"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
