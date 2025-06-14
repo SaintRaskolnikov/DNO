@@ -21,13 +21,16 @@
     }
   },
   "criterios_laboratoriais": {
-    "criterios_gerais": {
+    "Leptospirose": {
     "minimo_requerido": 1,
-    "criterios": {
+    "grupos": {
+        "confirmado": {
       "0": "Isolamento de Leptospira interrogans ou de outras Leptospira spp. patogénicas, a partir de uma amostra biológica",
       "1": "Deteção de ácidos nucleicos de outras Leptospira spp. patogénicas, numa amostra biológica",
       "2": "Demonstração da presença de Leptospira interrogans ou de outras Leptospira spp. patogénicas por imunofluorescência numa amostra biológica",
       "3": "Resposta imunitária específica à Leptospira interrogans ou a outras Leptospira spp. patogénicas"
+        },
+        "provavel": {}
     }
     }
   },
