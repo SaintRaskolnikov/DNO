@@ -1,0 +1,51 @@
+{
+  "doenca": "Febre Tifóide e Febre Paratifóide",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Febre prolongada OU pelo menos dois dos critérios seguintes.",
+      "condicao_base": {
+        "0": "Febre prolongada"
+      },
+      "minimo_requerido": 2,
+      "criterios": {
+        "0": "Cefaleia",
+        "1": "Bradicardia relativa",
+        "2": "Tosse não produtiva",
+        "3": "Diarreia, obstipação, mal-estar geral ou dores abdominais"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "febre_tifoide_paratifoide": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Salmonella Typhi ou Paratyphi a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de Salmonella Typhi ou Paratyphi numa amostra biológica"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a uma fonte comum",
+      "1": "Transmissão entre seres humanos",
+      "2": "Exposição a alimentos/água contaminados"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
