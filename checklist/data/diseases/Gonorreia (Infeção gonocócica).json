@@ -1,0 +1,53 @@
+{
+  "doenca": "Gonorreia (Infeção gonocócica)",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que apresente pelo menos um dos seguintes sinais/sintomas, ou recém-nascido com conjuntivite.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Uretrite",
+        "1": "Salpingite aguda",
+        "2": "Doença inflamatória pélvica",
+        "3": "Cervicite",
+        "4": "Epididimite",
+        "5": "Proctite",
+        "6": "Faringite",
+        "7": "Artrite",
+        "8": "Conjuntivite em recém-nascido"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "gonorreia": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Neisseria gonorrhoeae a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de Neisseria gonorrhoeae numa amostra biológica",
+          "2": "Demonstração da presença de Neisseria gonorrhoeae por teste de ácidos nucleicos por sonda sem amplificação",
+          "3": "Deteção microscópica de diplococos gram-negativos intracelulares em amostra uretral masculina"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (contacto sexual ou transmissão vertical)"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
