@@ -20,12 +20,14 @@
   "criterios_laboratoriais": {
     "Leish-isceral": {
     "minimo_requerido": 1,
-    "criterios": {
+      "grupos": {
+    "confirmado": {
       "0": "Isolamento de Leishmania sp. a partir de uma amostra biológica",
       "1": "Confirmação da presença de Leishmania sp. por microscopia ótica, em esfregaço sanguíneo e/ou gota espessa após coloração de Giemsa",
       "2": "Deteção de ácidos nucleicos de Leishmania sp. em medula óssea ou sangue periférico",
       "3": "Deteção de anticorpos séricos específicos de Leishmania sp. por meio de um teste serológico de alta sensibilidade (ELISA, HA, IF, etc.) E confirmação desse resultado por meio de um teste serológico de alta especificidade (Immunoblot)"
-    }
+        },
+        "provavel": {}
     }
   },
   "criterios_epidemiologicos": {
