@@ -1,0 +1,62 @@
+{
+  "doenca": "Infeção pelo SARS-CoV-2/COVID-19",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que apresente pelo menos um dos seguintes critérios",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Tosse de novo ou agravamento do padrão habitual",
+        "1": "Febre (temperatura corporal ≥ 38,0 °C) sem outra causa atribuível",
+        "2": "Dispneia/dificuldade respiratória sem outra causa atribuível",
+        "3": "Anosmia de início súbito",
+        "4": "Disgeusia ou ageusia de início súbito"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "covid19": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Deteção de RNA de SARS‑CoV‑2 por TAAN em amostra respiratória",
+          "1": "Deteção de antigénio de SARS‑CoV‑2 por TRAg em amostra respiratória (Norma n.º 019/2020 DGS)"
+        },
+        "provavel": {
+          "0": "Radiografia com hipotransparências difusas periféricas/subpleurais e/ou consolidações basais",
+          "1": "TC torácica com vidro despolido periférico/subpleural, consolidações multifocais ou sinal de halo invertido"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa com pelo menos um dos seguintes critérios nos 14 dias anteriores ao início dos sintomas",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Contacto com caso confirmado de COVID-19",
+        "1": "Residente ou trabalhador em instituição de pessoas vulneráveis com transmissão documentada",
+        "2": "Exposição laboratorial não protegida a material infetado/contendo SARS‑CoV‑2"
+      }
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
