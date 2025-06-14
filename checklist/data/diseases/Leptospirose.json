@@ -1,6 +1,7 @@
 {
   "doenca": "Leptospirose",
   "criterios_clinicos": {
+    "criterios_gerais": {
     "descricao": "Qualquer pessoa com febre; ou que preencha pelo menos dois dos restantes critérios",
     "minimo_requerido": 1,
     "criterios": {
@@ -17,14 +18,17 @@
       "10": "Compromisso da função renal",
       "11": "Sintomas respiratórios, nomeadamente hemoptise"
     }
+    }
   },
   "criterios_laboratoriais": {
+    "criterios_gerais": {
     "minimo_requerido": 1,
     "criterios": {
       "0": "Isolamento de Leptospira interrogans ou de outras Leptospira spp. patogénicas, a partir de uma amostra biológica",
       "1": "Deteção de ácidos nucleicos de outras Leptospira spp. patogénicas, numa amostra biológica",
       "2": "Demonstração da presença de Leptospira interrogans ou de outras Leptospira spp. patogénicas por imunofluorescência numa amostra biológica",
       "3": "Resposta imunitária específica à Leptospira interrogans ou a outras Leptospira spp. patogénicas"
+    }
     }
   },
   "criterios_epidemiologicos": {
