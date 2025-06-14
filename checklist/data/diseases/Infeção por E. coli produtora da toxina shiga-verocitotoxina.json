@@ -1,0 +1,66 @@
+{
+  "doenca": "Infeção por E. coli produtora da toxina shiga/verocitotoxina (STEC/VTEC), incluindo a síndrome hemolítico-urémica (SHU)",
+  "criterios_clinicos": {
+    "diarreia_stec_vtec": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos dois critérios seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Dor abdominal"
+      }
+    },
+    "shu": {
+      "descricao": "Qualquer pessoa com insuficiência renal aguda e pelo menos um dos dois critérios seguintes",
+      "condicao_base": {
+        "0": "Insuficiência renal aguda"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Anemia hemolítica microangiopática",
+        "1": "Trombocitopenia"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "minimo_requerido": 1,
+    "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional Doutor Ricardo Jorge (INSA).",
+    "criterios": {
+      "0": "Isolamento/cultura de Escherichia coli produtora de toxina Shiga/Vero ou portadora dos genes stx1/vtx1 ou stx2/vtx2",
+      "1": "Isolamento de Escherichia coli não fermentadora do sorbitol (NSF) O157 (sem análise das toxinas ou dos genes produtores de toxina)",
+      "2": "Deteção de ácidos nucleicos dos genes stx1/vtx1 ou stx2/vtx2",
+      "3": "Deteção de toxina Shiga/Vero livre nas fezes",
+      "4": "Resposta imunitária específica aos serogrupos de Escherichia coli (exclusivamente no caso de síndrome hemolítico-urémico)"
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Pelo menos um dos critérios seguintes",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Exposição a uma fonte comum",
+      "2": "Transmissão de animais a seres humanos",
+      "3": "Exposição a alimentos/água contaminados",
+      "4": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
