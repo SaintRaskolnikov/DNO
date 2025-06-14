@@ -1,0 +1,46 @@
+{
+  "doenca": "Febres Hemorrágicas Virais",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que preencha, pelo menos, um dos dois critérios seguintes.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre",
+        "1": "Manifestações hemorrágicas suscetíveis de conduzir a falência multiorgânica"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "febres_hemorragicas_virais": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de vírus específico a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de vírus específico numa amostra biológica e confirmação por genotipagem"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Ter viajado, nos últimos 21 dias, para uma região onde se tenham verificado casos de febres hemorrágicas virais",
+      "1": "Exposição, nos últimos 21 dias, a um caso provável ou confirmado de febre hemorrágica viral que tenha ocorrido nos últimos seis meses"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
