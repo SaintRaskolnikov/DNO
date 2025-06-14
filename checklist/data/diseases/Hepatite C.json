@@ -1,0 +1,36 @@
+{
+  "doenca": "Hepatite C",
+  "criterios_clinicos": {
+    "irrelevante": {
+      "descricao": "Critérios clínicos não são relevantes para efeitos de vigilância epidemiológica.",
+      "minimo_requerido": 0,
+      "criterios": {}
+    }
+  },
+  "criterios_laboratoriais": {
+    "hepatite_c": {
+      "minimo_requerido": 1,
+      "nota": "Se possível, identificar o genótipo.",
+      "grupos": {
+        "confirmado": {
+          "0": "Deteção de ácidos nucleicos do vírus da Hepatite C (VHC ARN)",
+          "1": "Deteção do antigénio do core do vírus da Hepatite C (VHC‑core)",
+          "2": "Resposta imunitária específica ao vírus da Hepatite C (anti‑VHC) confirmada por ensaio de anticorpos confirmatório em pessoas com mais de 18 meses de idade sem sinais de infeção aguda"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "possivel": {},
+    "provavel": {},
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_conf": 1
+    }
+  }
+}
