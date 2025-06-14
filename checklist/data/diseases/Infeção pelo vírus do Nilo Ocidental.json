@@ -2,7 +2,7 @@
   "doenca": "Infeção pelo vírus do Nilo Ocidental",
   "criterios_clinicos": {
     "relevante": {
-      "descricao": "Pelo menos um dos seguintes critérios clínicos",
+      "descricao": "Pelo menos um dos seguintes critérios",
       "minimo_requerido": 1,
       "criterios": {
         "0": "Febre",
@@ -17,10 +17,10 @@
       "nota": "Resultados serológicos devem ser interpretados tendo em conta exposições anteriores a flavivírus e estado vacinal. Amostras devem ser enviadas para confirmação/serotipagem pelo INSA.",
       "grupos": {
         "confirmado": {
-          "0": "Isolamento do vírus do Nilo Ocidental a partir de sangue ou líquido cefalorraquidiano",
-          "1": "Deteção de ácidos nucleicos do vírus do Nilo Ocidental no sangue ou no líquor",
-          "2": "Resposta imunitária específica (IgM) ao vírus do Nilo Ocidental no líquor",
-          "3": "Título elevado de IgM E deteção de IgG do vírus do Nilo Ocidental E confirmação por neutralização"
+          "0": "Isolamento do vírus do Nilo Ocidental a partir de sangue ou líquor",
+          "1": "Deteção de ácidos nucleicos do vírus do Nilo Ocidental no sangue ou líquor",
+          "2": "Deteção de IgM específico ao vírus do Nilo Ocidental no líquor",
+          "3": "Título elevado de IgM E deteção de IgG ao vírus do Nilo Ocidental E confirmação por neutralização"
         },
         "provavel": {
           "0": "Resposta imunitária específica ao vírus do Nilo Ocidental (IgM) no soro"
@@ -29,22 +29,28 @@
     }
   },
   "criterios_epidemiologicos": {
-    "minimo_requerido": 0,
-    "criterios": {}
+    "relevante": {
+      "descricao": "Pelo menos um dos seguintes critérios",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Residência ou viagem a área endémica para vírus do Nilo Ocidental em cavalos ou aves, ou exposição a picadas de mosquitos nessas áreas",
+        "1": "Transmissão entre seres humanos (vertical, transfusão, transplante)"
+      }
+    }
   },
   "classificacao_caso": {
-    "possivel": {},
     "provavel": {
       "cli": 1,
-      "epi": 0,
+      "epi": 1,
       "lab_prov": 1,
       "lab_conf": 0
     },
     "confirmado": {
-      "cli": 1,
+      "cli": 0,
       "epi": 0,
       "lab_prov": 0,
       "lab_conf": 1
     }
   }
 }
+
