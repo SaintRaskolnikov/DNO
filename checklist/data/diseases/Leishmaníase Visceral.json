@@ -18,7 +18,7 @@
     }
   },
   "criterios_laboratoriais": {
-    "criterios_gerais": {
+    "Leish-isceral": {
     "minimo_requerido": 1,
     "criterios": {
       "0": "Isolamento de Leishmania sp. a partir de uma amostra biológica",
@@ -37,12 +37,6 @@
     }
   },
   "classificacao_caso": {
-    "possivel": {
-      "cli": 0,
-      "epi": 0,
-      "lab_prov": 0,
-      "lab_conf": 0
-    },
     "provavel": {
       "cli": 1,
       "epi": 1,
