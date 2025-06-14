@@ -128,7 +128,7 @@ def checklist_view(request, dno):
         classificacao_atual = ""
 
         # Order matters: check 'confirmado' first
-        prioridade = ["confirmado", "provavel", "possivel"]
+        prioridade = ["Confirmado", "Provável", "Possível"]
         classificacoes_ordenadas = sorted(classificacoes.items(), key=lambda x: prioridade.index(x[0]))
 
         for nome, valores in classificacoes_ordenadas:
