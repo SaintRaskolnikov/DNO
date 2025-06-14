@@ -1,0 +1,38 @@
+{
+  "doenca": "Hepatite B",
+  "criterios_clinicos": {
+    "irrelevante": {
+      "descricao": "Critérios clínicos não são relevantes para efeitos de vigilância epidemiológica.",
+      "minimo_requerido": 0,
+      "criterios": {}
+    }
+  },
+  "criterios_laboratoriais": {
+    "hepatite_b": {
+      "minimo_requerido": 1,
+      "nota": "Se possível, identificar o genótipo. Resultados devem ser interpretados de acordo com o estado vacinal.",
+      "grupos": {
+        "confirmado": {
+          "0": "Resposta de anticorpos séricos IgM contra o antigénio core do vírus da Hepatite B (IgM anti-HBc)",
+          "1": "Pesquisa de antigénio de superfície do vírus da Hepatite B (Ag HBs)",
+          "2": "Pesquisa de antigénio do envelope do vírus da Hepatite B (Ag HBe)",
+          "3": "Deteção de ácidos nucleicos do vírus da Hepatite B (ADN VHB)"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "possivel": {},
+    "provavel": {},
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_conf": 1
+    }
+  }
+}
