@@ -1,0 +1,71 @@
+{
+  "doenca": "Infeção pelo MERS-CoV",
+  "criterios_clinicos": {
+    "mers_cov": {
+      "grupos": {
+        "grave": {
+          "descricao": "Febre E pneumonia ou Síndrome da Insuficiência Respiratória Aguda (baseado em dados clínicos e/ou radiológicos) E sem outra etiologia que explique o quadro",
+          "minimo_requerido": 1,
+          "criterios": {
+            "0": "Febre e pneumonia ou Síndrome da Insuficiência Respiratória Aguda"
+          }
+        },
+        "moderada": {
+          "descricao": "Febre OU sintomas respiratórios (tosse e/ou dispneia sem ter necessariamente pneumonia)",
+          "minimo_requerido": 1,
+          "criterios": {
+            "0": "Febre",
+            "1": "Tosse e/ou dispneia"
+          }
+        }
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "mers_cov": {
+      "minimo_requerido": 1,
+      "nota": "Os testes laboratoriais devem ser realizados no Laboratório Nacional de Referência — INSA.",
+      "grupos": {
+        "confirmado": {
+          "0": "Deteção de ácidos nucleicos do MERS-CoV por RT-PCR"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "grupos": {
+      "grave": {
+        "minimo_requerido": 1,
+        "criterios": {
+          "0": "Antecedentes de viagem ou residência nos 14 dias anteriores a sintoma para área com MERS-CoV ou circulação em dromedários",
+          "1": "Contacto próximo nos 14 dias anteriores com doente respiratório agudo de área afetada",
+          "2": "Pertencer a cluster de doença respiratória aguda nos 14 dias antes do início dos sintomas",
+          "3": "Profissional de saúde numa unidade de tratamento de doença respiratória aguda grave",
+          "4": "Contacto direto com dromedário ou consumo de produtos crus (carne, leite) em área afetada nos 14 dias anteriores"
+        }
+      },
+      "moderada": {
+        "minimo_requerido": 1,
+        "criterios": {
+          "0": "História de permanência (paciente, profissional ou visitante) em unidade de saúde em área afetada nos 14 dias anteriores",
+          "1": "Contacto próximo com caso confirmado e sintomático de MERS-CoV nos 14 dias anteriores"
+        }
+      }
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {},
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
