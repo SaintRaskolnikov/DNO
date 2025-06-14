@@ -1,0 +1,47 @@
+{
+  "doenca": "Febre Q",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos três critérios seguintes.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre",
+        "1": "Pneumonia",
+        "2": "Hepatite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "febre_q": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento da Coxiella burnetii a partir de uma amostra biológica",
+          "1": "Deteção de ácido nucleico da Coxiella burnetii numa amostra biológica",
+          "2": "Resposta imunitária específica a Coxiella burnetii (IgG e IgM fase II)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a uma fonte comum",
+      "1": "Transmissão de animais a seres humanos"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
