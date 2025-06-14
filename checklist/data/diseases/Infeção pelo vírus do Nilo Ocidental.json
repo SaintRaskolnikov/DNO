@@ -1,0 +1,50 @@
+{
+  "doenca": "Infeção pelo vírus do Nilo Ocidental",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Pelo menos um dos seguintes critérios clínicos",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre",
+        "1": "Encefalite",
+        "2": "Meningite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "nilo_ocidental": {
+      "minimo_requerido": 1,
+      "nota": "Resultados serológicos devem ser interpretados tendo em conta exposições anteriores a flavivírus e estado vacinal. Amostras devem ser enviadas para confirmação/serotipagem pelo INSA.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do vírus do Nilo Ocidental a partir de sangue ou líquido cefalorraquidiano",
+          "1": "Deteção de ácidos nucleicos do vírus do Nilo Ocidental no sangue ou no líquor",
+          "2": "Resposta imunitária específica (IgM) ao vírus do Nilo Ocidental no líquor",
+          "3": "Título elevado de IgM E deteção de IgG do vírus do Nilo Ocidental E confirmação por neutralização"
+        },
+        "provavel": {
+          "0": "Resposta imunitária específica ao vírus do Nilo Ocidental (IgM) no soro"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "possivel": {},
+    "provavel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
