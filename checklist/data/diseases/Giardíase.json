@@ -1,0 +1,50 @@
+{
+  "doenca": "Giardíase",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos quatro critérios seguintes.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Dores abdominais",
+        "2": "Distensão abdominal",
+        "3": "Sinais de má absorção (por exemplo, esteatorreia, perda de peso)"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "giardiase": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Demonstração da presença de quistos ou trofozoítos de Giardia intestinalis nas fezes, no fluido duodenal ou em biópsia do intestino delgado",
+          "1": "Deteção do antigénio de Giardia intestinalis nas fezes, no fluido duodenal ou em biópsia do intestino delgado",
+          "2": "Deteção de ácidos nucleicos de Giardia intestinalis nas fezes, no fluido duodenal ou em biópsia do intestino delgado"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a alimentos/água contaminados",
+      "1": "Transmissão entre seres humanos",
+      "2": "Exposição a uma fonte comum",
+      "3": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
