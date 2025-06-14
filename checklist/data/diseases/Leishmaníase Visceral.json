@@ -1,0 +1,55 @@
+{
+  "doenca": "Leishmaníase Visceral",
+  "criterios_clinicos": {
+    "descricao": "Pessoa com, pelo menos, dois dos seguintes critérios",
+    "minimo_requerido": 2,
+    "criterios": {
+      "0": "Febre",
+      "1": "Mal-estar geral",
+      "2": "Anorexia",
+      "3": "Perda de peso",
+      "4": "Esplenomegalia (de grandes dimensões) mole e indolor",
+      "5": "Hepatomegalia moderada",
+      "6": "Adenopatias inguinais e cervicais",
+      "7": "Anemia",
+      "8": "Trombocitopenia"
+    }
+  },
+  "criterios_laboratoriais": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Isolamento de Leishmania sp. a partir de uma amostra biológica",
+      "1": "Confirmação da presença de Leishmania sp. por microscopia ótica, em esfregaço sanguíneo e/ou gota espessa após coloração de Giemsa",
+      "2": "Deteção de ácidos nucleicos de Leishmania sp. em medula óssea ou sangue periférico",
+      "3": "Deteção de anticorpos séricos específicos de Leishmania sp. por meio de um teste serológico de alta sensibilidade (ELISA, HA, IF, etc.) E confirmação desse resultado por meio de um teste serológico de alta especificidade (Immunoblot)"
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Critérios epidemiológicos relevantes para o caso",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão de animais a humanos",
+      "1": "Práticas de utilização/partilha de seringas"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
