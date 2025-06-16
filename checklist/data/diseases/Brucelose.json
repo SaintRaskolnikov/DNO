@@ -19,6 +19,7 @@
     }
   },
   "criterios_laboratoriais": {
+    "brucelose": {
     "minimo_requerido": 1,
     "grupos": {
         "confirmado": {
@@ -27,6 +28,7 @@
       "2": "Deteção de ácidos nucleicos de Brucella spp. numa amostra biológica"
     },
     "provavel": {}
+    }
     }
   },
   "criterios_epidemiologicos": {
