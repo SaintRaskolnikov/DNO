@@ -1,0 +1,58 @@
+{
+  "doenca": "Parotidite Epidémica (Papeira)",
+  "criterios_clinicos": {
+    "principal": {
+      "descricao": "Qualquer pessoa com Febre e pelo menos um dos três critérios seguintes.",
+      "condicao_base": {
+        "0": "Febre"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Início brusco de tumefação unilateral ou bilateral das parótidas ou de outras glândulas salivares, sem outra causa aparente",
+        "1": "Orquite",
+        "2": "Meningite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "parotidite_epidemica": {
+      "minimo_requerido": 1,
+      "nota": "Os resultados laboratoriais devem ser interpretados de acordo com o estado vacinal. Em caso de vacinação recente, investigar o vírus selvagem.",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Isolamento do vírus da parotidite epidémica a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos do vírus da parotidite epidémica",
+          "2": "Resposta imunitária específica ao vírus da parotidite epidémica característica da infeção aguda (IgM) no soro"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão entre seres humanos (pessoa a pessoa).",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
