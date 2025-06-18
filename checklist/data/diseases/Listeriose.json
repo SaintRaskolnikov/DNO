@@ -30,7 +30,7 @@
     }
   },
   "criterios_laboratoriais": {
-    "listeriose_geral": {
+    "geral": {
       "minimo_requerido": 1,
       "grupos": {
         "confirmado": {
@@ -43,6 +43,14 @@
       "grupos": {
         "confirmado": {
           "0": "Isolamento ou deteção de ácidos nucleicos de Listeria monocytogenes em local normalmente não estéril (placenta, líquido amniótico, mecónio, esfregaço vaginal) ou a partir de feto, nado-morto, recém-nascido ou da mãe"
+        }
+      }
+    },
+      "listeriose_neonatal": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento da Listeria monocytogenes ou deteção de ácidos nucleicos de Listeria monocytogenes a partir de um local normalmente estéril"
         }
       }
     }
