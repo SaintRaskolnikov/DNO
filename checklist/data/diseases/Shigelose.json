@@ -1,0 +1,59 @@
+{
+  "doenca": "Shigelose",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos seguintes critérios clínicos",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Febre",
+        "2": "Vómitos",
+        "3": "Dores abdominais"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "shigella": {
+      "minimo_requerido": 1,
+      "nota": "Se for possível, devem efetuar-se testes de sensibilidade aos antimicrobianos para a Shigella.",
+      "grupos": {
+        "provavel": {
+          "0": "Deteção de ácidos nucleicos de Shigella spp. numa amostra biológica"
+        },
+        "confirmado": {
+          "0": "Isolamento de Shigella spp. a partir de uma amostra biológica"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Critérios epidemiológicos relevantes para o caso",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Exposição a uma fonte comum",
+      "2": "Exposição a alimentos/água contaminados",
+      "3": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
