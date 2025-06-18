@@ -39,6 +39,36 @@
             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
           <label for="internamento" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Internamento?</label>
         </div>
+        
+        <!-- Viagem -->
+        <div class="flex items-center mb-6">
+          <input id="viagem" type="checkbox"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="viagem" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Viagem recente?</label>
+        </div>
+        
+        <!-- Detalhes da viagem: visíveis apenas se viagem estiver selecionada -->
+        <div id="viagem-detalhes" class="mb-6 hidden">
+          <!-- Data de regresso -->
+          <label for="data-regresso" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data de regresso</label>
+          <input
+            type="date"
+            id="data-regresso"
+            name="data-regresso"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white mb-4"
+          />
+        
+          <!-- Origem da viagem -->
+          <label for="origem-viagem" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Origem da viagem</label>
+          <input
+            type="text"
+            id="origem-viagem"
+            name="origem-viagem"
+            placeholder="País, cidade, etc."
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+          />
+        </div>
+
 
         <!-- Data de início dos sintomas -->
         <div class="mb-6">
@@ -60,7 +90,7 @@
           <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Notas</label>
           <textarea id="message" rows="4"
             class="block w-full p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-            placeholder="e.g., coabitantes, contactos de risco, contextos de risco, profissão..."></textarea>
+            placeholder="e.g., coabitantes, contactos de risco, contextos de risco como escolas ou ERPI, profissão..."></textarea>
         </div>
 
         <button onclick="window.print()"
@@ -498,6 +528,18 @@ function validarAccordion(slug) {
       }
     });
   });
+
+  const viagemCheckbox = document.getElementById("viagem");
+  const viagemDetalhes = document.getElementById("viagem-detalhes");
+
+  viagemCheckbox.addEventListener("change", () => {
+    if (viagemCheckbox.checked) {
+      viagemDetalhes.classList.remove("hidden");
+    } else {
+      viagemDetalhes.classList.add("hidden");
+    }
+  });
+
 </script>
 
 
