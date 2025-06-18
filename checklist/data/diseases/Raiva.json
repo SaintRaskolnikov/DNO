@@ -1,0 +1,63 @@
+{
+  "doenca": "Raiva",
+  "criterios_clinicos": {
+    "criterios": {
+      "descricao": "Qualquer pessoa com encefalomielite aguda E pelo menos dois dos sete critérios seguintes",
+      "condicao_base": {
+        "0": "Encefalomielite aguda"
+      },
+      "minimo_requerido": 2,
+      "criterios": {
+        "0": "Alterações sensoriais na zona de uma mordedura de animal precedente",
+        "1": "Paresia ou paralisia",
+        "2": "Espasmos dos músculos responsáveis pela deglutição",
+        "3": "Hidrofobia",
+        "4": "Delírio",
+        "5": "Convulsões",
+        "6": "Ansiedade"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "lyssavirus": {
+      "minimo_requerido": 1,
+      "nota": "Os resultados laboratoriais devem ser interpretados de acordo com o estado vacinal ou o estado de imunização da pessoa.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do Lyssavirus a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos do Lyssavirus numa amostra biológica (por exemplo, saliva ou tecido cerebral)",
+          "2": "Deteção de antigénios do Lyssavirus por imunofluorescência direta numa amostra biológica",
+          "3": "Resposta imunitária específica ao Lyssavirus através do ensaio de neutralização do vírus no soro ou no líquido cefalorraquidiano"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão de animais a seres humanos (animal suspeito de infeção ou com infeção confirmada)",
+      "1": "Exposição a uma fonte comum (ao mesmo animal)",
+      "2": "Transmissão entre seres humanos (por exemplo, transplantação de órgãos)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
