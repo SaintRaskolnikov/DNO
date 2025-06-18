@@ -1,0 +1,71 @@
+{
+  "doenca": "Tosse Convulsa",
+  "criterios_clinicos": {
+    "tosse_persistente_com_sinais": {
+      "descricao": "Tosse persistente durante, pelo menos, duas semanas E pelo menos um dos seguintes",
+      "condicao_base": {
+        "0": "Tosse persistente durante, pelo menos, duas semanas"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Tosse paroxística",
+        "1": "Sibilos inspiratórios",
+        "2": "Vómitos provocados pela tosse"
+      }
+    },
+    "diagnostico_medico": {
+      "descricao": "Diagnóstico de tosse convulsa por médico",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diagnóstico clínico de tosse convulsa por um médico"
+      }
+    },
+    "apneia_lactentes": {
+      "descricao": "Episódios de apneia nos lactentes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Episódios de apneia em lactente"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "b_pertussis": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Isolamento do Bordetella pertussis a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos do Bordetella pertussis numa amostra biológica",
+          "2": "Resposta imunológica específica para a toxina pertússica"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão pessoa a pessoa",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
