@@ -1,0 +1,73 @@
+{
+  "criterios_clinicos": {
+    "geral": {
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre",
+        "1": "Meningite, meningoencefalite ou encefalite",
+        "2": "Sintomas gripais",
+        "3": "Septicemia",
+        "4": "Infeções localizadas, tais como artrite, endocardite, endoftalmite e abcessos"
+      }
+    },
+    "listeriose_gravidez": {
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Aborto espontâneo",
+        "1": "Nado-morto (morte fetal após 20 semanas de gestação)",
+        "2": "Nascimento prematuro (antes das 37 semanas de gestação)"
+      }
+    },
+    "listeriose_neonatal": {
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Meningite ou meningoencefalite",
+        "1": "Septicemia",
+        "2": "Dispneia",
+        "3": "Granulomatose infantisética",
+        "4": "Lesões cutâneas, das membranas mucosas ou da conjuntiva"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "listeriose_geral": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento da Listeria monocytogenes ou deteção de ácidos nucleicos de Listeria monocytogenes a partir de um local normalmente estéril"
+        }
+      }
+    },
+    "listeriose_gravidez": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento ou deteção de ácidos nucleicos de Listeria monocytogenes em local normalmente não estéril (placenta, líquido amniótico, mecónio, esfregaço vaginal) ou a partir de feto, nado-morto, recém-nascido ou da mãe"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a uma fonte comum",
+      "1": "Transmissão entre seres humanos (transmissão vertical)",
+      "2": "Exposição a alimentos contaminados",
+      "3": "Transmissão de animais a seres humanos"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
