@@ -1,0 +1,71 @@
+{
+  "doenca": "Sífilis Congénita",
+  "criterios_clinicos": {
+    "lactente_menor_2_anos": {
+      "descricao": "Qualquer lactente com menos de 2 anos de idade que preencha pelo menos um dos seguintes critérios",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Hepatoesplenomegalia",
+        "1": "Lesões mucocutâneas",
+        "2": "Condylomata lata",
+        "3": "Rinite persistente",
+        "4": "Icterícia",
+        "5": "Pseudoparalisia (devida a periostite e osteocondrite)",
+        "6": "Comprometimento do sistema nervoso central",
+        "7": "Anemia",
+        "8": "Síndrome nefrótico",
+        "9": "Desnutrição"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "sifilis": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {
+          "0": "Resultado do teste VDRL reativo no líquido cefalorraquidiano",
+          "1": "Testes serológicos treponémicos e não treponêmicos reativos no soro da mãe",
+          "2": "Título dos anticorpos não treponêmicos do lactente quatro ou mais vezes superior ao título materno"
+        },
+        "confirmado": {
+          "0": "Demonstração de Treponema pallidum por exame em campo escuro em material do cordão umbilical, placenta, exsudado nasal ou lesões cutâneas",
+          "1": "Demonstração de Treponema pallidum por imunofluorescência direta (DFA‑TP) em material do cordão umbilical, placenta, exsudado nasal ou lesões cutâneas",
+          "2": "Deteção de IgM específico de Treponema pallidum E teste não treponêmico (VDRL, RPR) reativo no soro do lactente"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão vertical",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (transmissão vertical)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
