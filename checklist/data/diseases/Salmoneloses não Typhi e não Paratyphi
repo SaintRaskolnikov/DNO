@@ -1,0 +1,59 @@
+{
+  "doenca": "Salmoneloses não Typhi e não Paratyphi",
+  "criterios_clinicos": {
+    "relevante": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos seguintes critérios clínicos",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Diarreia",
+        "1": "Febre",
+        "2": "Dores abdominais",
+        "3": "Vómitos"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "salmonella": {
+      "minimo_requerido": 1,
+      "nota": "Se possível, dever-se-á proceder à identificação da espécie e aos testes de sensibilidade aos antimicrobianos.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento de Salmonella (exceto S. Typhi ou S. Paratyphi) a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de Salmonella (exceto S. Typhi ou S. Paratyphi) numa amostra biológica"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Critérios epidemiológicos relevantes para o caso",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Exposição a uma fonte comum",
+      "2": "Transmissão de animais a seres humanos",
+      "3": "Exposição a alimentos/água contaminados",
+      "4": "Exposição ambiental"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
