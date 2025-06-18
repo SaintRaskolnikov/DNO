@@ -1,0 +1,41 @@
+{
+  "doenca": "VIH (Infeção pelo vírus da imunodeficiência humana)/SIDA (Síndrome da imunodeficiência adquirida)",
+  "criterios_clinicos": {
+    "sida": {
+      "descricao": "Manifestações clínicas conforme definição europeia de caso de SIDA",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Adultos e adolescentes com pelo menos 15 anos: presença de uma ou mais condições clínicas definidoras de SIDA segundo a definição europeia",
+        "1": "Crianças com menos de 15 anos: presença de uma ou mais condições clínicas definidoras de SIDA segundo a definição europeia"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "vih": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Adultos, adolescentes e crianças ≥18 meses: Resultado positivo num teste para anticorpos anti-VIH ou pesquisa combinada (anticorpos anti-VIH e antigénio p24), com confirmação por teste mais específico (ex. Western blot)",
+          "1": "Adultos, adolescentes e crianças ≥18 meses: Resultado positivo em dois testes EIA e confirmação por um terceiro teste EIA",
+          "2": "Adultos, adolescentes e crianças ≥18 meses: Resultados positivos em duas amostras separadas por pelo menos um dos seguintes: deteção de ácidos nucleicos (VIH-ARN ou VIH-ADN), antigénio p24 com ensaio de neutralização, isolamento do VIH",
+          "3": "Crianças <18 meses: Resultados positivos em duas amostras separadas (excluindo sangue do cordão) de pelo menos um dos seguintes: isolamento do VIH, deteção de ácidos nucleicos (VIH-ARN ou VIH-ADN), ou antigénio p24 (se ≥1 mês de idade)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Não aplicável",
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
