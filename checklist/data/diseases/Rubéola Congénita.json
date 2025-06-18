@@ -1,0 +1,59 @@
+{
+  "doenca": "Rubéola Congénita",
+  "criterios_clinicos": {
+    "rubeloa_congenita": {
+      "descricao": "Casos de rubéola congénita sem manifestações do síndrome",
+      "minimo_requerido": 0,
+      "criterios": {}
+    },
+    "sindrome_rubeola_congenita_categoria_A": {
+      "descricao": "Critérios da categoria A (pelo menos dois para SRC)",
+      "minimo_requerido": 2,
+      "criterios": {
+        "0": "Catarata",
+        "1": "Glaucoma congénito",
+        "2": "Cardiopatia congénita",
+        "3": "Surdez",
+        "4": "Retinite pigmentar"
+      }
+    },
+    "sindrome_rubeola_congenita_categoria_B": {
+      "descricao": "Critérios da categoria B (um combinado com A para SRC)",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Púrpura",
+        "1": "Esplenomegalia",
+        "2": "Microcefalia",
+        "3": "Atraso no desenvolvimento",
+        "4": "Meningoencefalite",
+        "5": "Osteopatia radiotransparente",
+        "6": "Icterícia com início nas primeiras 24 horas de vida"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "rubeola": {
+      "minimo_requerido": 1,
+      "nota": "Testes realizados no Laboratório Nacional de Referência para as Doenças Evitáveis pela Vacinação (INSA). Interpretar conforme estado vacinal.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do vírus da rubéola a partir de amostra biológica",
+          "1": "Deteção de ácidos nucleicos do vírus da rubéola em amostra biológica",
+          "2": "Resposta imunitária específica (IgM) ao vírus da rubéola em amostra biológica",
+          "3": "Persistência de IgG para o vírus da rubéola entre 6 e 12 meses de idade (duas amostras com concentração semelhante)"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão vertical confirmada laboratorialmente durante a gravidez",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (transmissão vertical) confirmada laboratorialmente na mãe"
+    }
+  },
+  "classificacao_caso": {
+
+  }
+}
