@@ -1,0 +1,60 @@
+{
+  "doenca": "Tuberculose",
+  "criterios_clinicos": {
+    "clinico_terapia": {
+      "descricao": "Sinais/sintomas/imagens radiológicas compatíveis com tuberculose ativa E decisão médica de administrar ciclo completo de terapia antituberculose",
+      "minimo_requerido": 2,
+      "criterios": {
+        "0": "Sinais/sintomas/imagens radiológicas compatíveis com tuberculose ativa, qualquer localização",
+        "1": "Decisão médica de administrar ciclo completo de terapia antituberculose"
+      }
+    },
+    "autopsia": {
+      "descricao": "Resultados anatomopatológicos necrópsicos compatíveis com tuberculose ativa que exigiriam tratamento antibiótico antituberculose em vida",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Resultados anatomopatológicos necrópsicos compatíveis com tuberculose ativa"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "mtb_complexo": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {
+          "0": "Microscopia para deteção de bacilos ácido-resistentes ou coloração fluorescente equivalente",
+          "1": "Deteção de ácidos nucleicos do complexo Mycobacterium tuberculosis numa amostra biológica",
+          "2": "Exame histológico revela lesões granulomatosas"
+        },
+        "confirmado": {
+          "0": "Isolamento do complexo Mycobacterium tuberculosis (excluindo M. bovis‑BCG) a partir de amostra biológica",
+          "1": "Deteção de ácidos nucleicos do complexo M. tuberculosis numa amostra biológica E identificação positiva de bacilos ácido-resistentes por microscopia ou coloração fluorescente"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
