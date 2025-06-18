@@ -1,0 +1,105 @@
+{
+  "doenca": "Tularémia",
+  "criterios_clinicos": {
+    "ulceroglandular": {
+      "descricao": "Tularémia ulceroglandular",
+      "condicao_base": {
+        "0": "Úlcera cutânea"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Linfadenopatia regional"
+      }
+    },
+    "glandular": {
+      "descricao": "Tularémia glandular",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Adenopatias dolorosas sem úlceras aparentes"
+      }
+    },
+    "oculoglandular": {
+      "descricao": "Tularémia oculoglandular",
+      "condicao_base": {
+        "0": "Conjuntivite"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Linfadenopatia regional"
+      }
+    },
+    "orofaringea": {
+      "descricao": "Tularémia orofaríngea",
+      "condicao_base": {
+        "0": "Linfadenopatia cervical"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Estomatite",
+        "1": "Faringite",
+        "2": "Amigdalite"
+      }
+    },
+    "intestinal": {
+      "descricao": "Tularémia intestinal — pelo menos um dos seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Dores abdominais",
+        "1": "Vómitos",
+        "2": "Diarreia"
+      }
+    },
+    "pneumonica": {
+      "descricao": "Tularémia pneumónica",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Pneumonia"
+      }
+    },
+    "tifoide": {
+      "descricao": "Tularémia tifóide — pelo menos um dos seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre sem sinais e sintomas precoces de localização",
+        "1": "Septicemia"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "francisella": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Isolamento de Francisella tularensis a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos de Francisella tularensis numa amostra biológica",
+          "2": "Resposta imunitária específica a Francisella tularensis"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Pelo menos um dos seguintes",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a uma fonte comum",
+      "1": "Transmissão de animais a seres humanos",
+      "2": "Exposição a alimentos/água contaminados"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
