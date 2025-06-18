@@ -1,0 +1,55 @@
+{
+  "doenca": "Neuroborreliose de Lyme",
+  "criterios_clinicos": {
+    "precoce": {
+      "descricao": "Sintomas neurológicos com menos de 6 meses de evolução, com manifestações do Sistema Nervoso Periférico ou do Sistema Nervoso Central.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Sintomas neurológicos com menos de 6 meses de evolução, manifestações do Sistema Nervoso Periférico ou Central"
+      }
+    },
+    "tardia": {
+      "descricao": "Sintomas neurológicos com mais de 6 meses de evolução, com manifestações do Sistema Nervoso Periférico ou do Sistema Nervoso Central.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Sintomas neurológicos com mais de 6 meses de evolução, manifestações do Sistema Nervoso Periférico ou Central"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "borrelia": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {
+          "0": "Pleocitose no líquido cefalorraquidiano e serologia positiva para borreliose de Lyme no líquido cefalorraquidiano",
+          "1": "Produção intratecal de anticorpos específicos da borreliose de Lyme"
+        },
+        "confirmado": {
+          "0": "Pleocitose no líquido cefalorraquidiano e prova de produção intratecal de anticorpos para borreliose de Lyme",
+          "1": "Isolamento de Borrelia burgdorferi s.l.",
+          "2": "Deteção de ácidos nucleicos no líquido cefalorraquidiano",
+          "3": "Deteção de anticorpos IgG contra borreliose de Lyme em sangue em menores de 18 anos com paralisia facial ou neurites cranianas e antecedentes recentes de eritema migrans (< 2 meses)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "provavel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
