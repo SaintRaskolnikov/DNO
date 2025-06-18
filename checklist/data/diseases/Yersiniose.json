@@ -1,0 +1,58 @@
+{
+  "doenca": "Yersiniose (enterite por Yersinia enterocolitica ou Yersinia pseudotuberculosis)",
+  "criterios_clinicos": {
+    "infeccao_yersinia": {
+      "descricao": "Pelo menos um dos seguintes sintomas",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre",
+        "1": "Diarreia",
+        "2": "Vómitos",
+        "3": "Dores abdominais (pseudoapendicite)",
+        "4": "Tenesmo retal"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "yersinia": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Isolamento de Yersinia enterocolitica ou Yersinia pseudotuberculosis a partir de uma amostra biológica",
+          "1": "Deteção de genes de virulência da Y. enterocolitica ou Y. pseudotuberculosis numa amostra biológica"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Pelo menos uma das formas de exposição conhecidas",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Exposição a uma fonte comum",
+      "2": "Transmissão de animais a seres humanos",
+      "3": "Exposição a alimentos/água contaminados"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
