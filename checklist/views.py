@@ -140,7 +140,14 @@ def checklist_view(request, dno):
             ):
                 classificacao_atual = nome
                 break
-
+        if classificacao_atual
+            if classificacao_atual == "confirmado"
+                classificacao_atual = "Confirmado"
+            elif classificacao_atual == "provavel"
+                classificacao_atual = "Provável"
+            elif classificacao_atual =="confirmado"
+                classificacao_atual = "confirmado"
+            
 
         # Handle AJAX POST
         if request.headers.get('x-requested-with') == 'XMLHttpRequest':
