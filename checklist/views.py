@@ -141,12 +141,12 @@ def checklist_view(request, dno):
                 classificacao_atual = nome
                 break
         if classificacao_atual:
-            if classificacao_atual == "confirmado"
+            if classificacao_atual == "confirmado":
                 classificacao_atual = "Confirmado"
-            elif classificacao_atual == "provavel"
+            elif classificacao_atual == "provavel":
                 classificacao_atual = "Provável"
-            elif classificacao_atual =="confirmado"
-                classificacao_atual = "confirmado"
+            elif classificacao_atual =="possivel":
+                classificacao_atual = "Possível"
             else
                 pass
             
