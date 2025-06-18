@@ -1,0 +1,35 @@
+{
+  "criterios_clinicos": {
+    "geral": {
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Febre ou antecedentes de febre"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "geral": {
+      "nota": "Se possível, dever-se-á proceder à tipagem de Plasmodium spp.",
+      "minimo_requerido": 1,
+      "grupos": {
+        "confirmado": {
+          "0": "Demonstração da presença de parasitas do género Plasmodium spp. por microscopia ótica em esfregaços de sangue periférico",
+          "1": "Deteção de ácidos nucleicos de Plasmodium spp. no sangue",
+          "2": "Deteção de antigénios específicos para Plasmodium spp."
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
