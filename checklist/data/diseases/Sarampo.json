@@ -1,0 +1,60 @@
+{
+  "doenca": "Sarampo",
+  "criterios_clinicos": {
+    "sarampo": {
+      "descricao": "Febre E exantema maculopapular E pelo menos um dos seguintes critérios",
+      "condicao_base": {
+        "0": "Febre",
+        "1": "Exantema maculopapular"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Tosse",
+        "1": "Rinite",
+        "2": "Conjuntivite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "sarampo": {
+      "minimo_requerido": 1,
+      "nota": "Testes realizados no Laboratório Nacional de Referência para as Doenças Evitáveis pela Vacinação (INSA). Interpretar conforme estado vacinal; em caso de vacinação recente, investigar vírus selvagem.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do vírus do sarampo a partir de amostra biológica",
+          "1": "Deteção de ácidos nucleicos do vírus do sarampo em amostra biológica",
+          "2": "Resposta imunitária específica característica da infeção aguda (IgM) no soro ou na saliva",
+          "3": "Subida da concentração de IgG num par de soros (fase aguda e convalescença)"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão pessoa a pessoa",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
