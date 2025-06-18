@@ -1,0 +1,49 @@
+{
+  "doenca": "Zika Congénita",
+  "criterios_clinicos": {
+    "zika_congenita": {
+      "descricao": "Lactente ou feto com pelo menos uma das seguintes anomalias do Sistema Nervoso Central",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Microcefalia",
+        "1": "Calcificações intracranianas",
+        "2": "Outras anomalias do Sistema Nervoso Central"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "zika": {
+      "minimo_requerido": 1,
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Deteção de ácidos nucleicos do vírus Zika numa amostra biológica",
+          "1": "Deteção do antigénio do vírus Zika numa amostra biológica",
+          "2": "Isolamento do vírus Zika a partir de uma amostra biológica",
+          "3": "Deteção dos anticorpos IgM específicos do vírus Zika no soro, no líquido cefalorraquidiano ou no líquido amniótico"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Suspeição ou confirmação de infeção pelo vírus Zika na mãe durante a gravidez",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Suspeição ou confirmação de infeção pelo vírus Zika na mãe durante a gravidez"
+    }
+  },
+  "classificacao_caso": {
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
