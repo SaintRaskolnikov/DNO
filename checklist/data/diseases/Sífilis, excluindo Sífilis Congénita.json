@@ -1,0 +1,76 @@
+{
+  "doenca": "Sífilis, excluindo Sífilis Congénita",
+  "criterios_clinicos": {
+    "primaria": {
+      "descricao": "Qualquer pessoa com um ou mais cancros duros (úlceras), geralmente indolores, nas áreas genital, perineal ou anal, na mucosa bucal ou faríngea, ou em qualquer outra área extragenital.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Cancro duro (úlcera) genital",
+        "1": "Cancro duro (úlcera) perineal ou anal",
+        "2": "Cancro duro (úlcera) bucal ou faríngeo",
+        "3": "Cancro duro (úlcera) extragenital"
+      }
+    },
+    "secundaria": {
+      "descricao": "Qualquer pessoa que preencha pelo menos um dos cinco critérios seguintes.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Exantema maculopapular difuso, frequentemente nas palmas das mãos e plantas dos pés",
+        "1": "Linfadenopatia generalizada",
+        "2": "Condylomata lata",
+        "3": "Enantema",
+        "4": "Alopécia difusa"
+      }
+    },
+    "latente_precoce": {
+      "descricao": "Ausência de sintomas e história clínica compatível com as fases precoces da sífilis nos últimos 12 meses.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "História clínica compatível com fase precoce (<12 meses) sem sintomas"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "sifilis": {
+      "minimo_requerido": 1,
+      "nota": "Podem ocorrer manifestações oculares e neurológicas em qualquer fase. Interpretar resultados conforme estado vacinal.",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Exame em campo escuro: Treponema pallidum em exsudados ou tecidos de lesão",
+          "1": "Imunofluorescência direta: Treponema pallidum em exsudados ou tecidos de lesão",
+          "2": "NAAT: deteção de ácidos nucleicos de Treponema pallidum em exsudados ou tecidos de lesão",
+          "3": "Serologia: anticorpos TPHA/TPPA/EIA e anticorpos TP‑IgM (IgM‑ELISA, immunoblot ou 19S‑IgM‑FTA‑abs) ou anticorpos não‑TP (RPR, VDRL)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão pessoa a pessoa conforme fase.",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Sífilis primária/secundária: contacto sexual",
+      "1": "Sífilis latente precoce: contacto sexual nos últimos 12 meses"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
