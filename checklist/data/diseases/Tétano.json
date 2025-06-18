@@ -1,0 +1,33 @@
+{
+  "doenca": "Tétano",
+  "criterios_clinicos": {
+    "tétano": {
+      "descricao": "Início agudo de, pelo menos, dois dos três critérios seguintes",
+      "minimo_requerido": 2,
+      "criterios": {
+        "0": "Contrações musculares dolorosas, essencialmente dos masséteres e dos músculos do pescoço, provocando trismus e risus sardonicus",
+        "1": "Contrações musculares dolorosas dos músculos do tronco",
+        "2": "Espasmos generalizados, frequentemente com opistótonos"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "nao_aplicavel": {
+      "minimo_requerido": 0,
+      "grupos": {}
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "provavel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    }
+  }
+}
