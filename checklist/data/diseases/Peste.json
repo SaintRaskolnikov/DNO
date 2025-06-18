@@ -1,0 +1,77 @@
+{
+  "doenca": "Peste",
+  "criterios_clinicos": {
+  "peste_bubonica": {
+    "descricao": "Febre E início brusco de linfadenite dolorosa",
+    "condicao_base": {
+      "0": "Febre"
+    },
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Início brusco de linfadenite dolorosa"
+    }
+  },
+  "peste_septicaemica": {
+    "descricao": "Febre",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Febre"
+    }
+  },
+  "peste_pneumonica": {
+    "descricao": "Febre E pelo menos um dos seguintes",
+    "condicao_base": {
+      "0": "Febre"
+    },
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Tosse",
+      "1": "Toracalgia",
+      "2": "Hemoptise"
+    }
+  }
+},
+  "criterios_laboratoriais": {
+    "peste": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Isolamento da Yersinia pestis a partir de uma amostra biológica",
+          "1": "Deteção de ácidos nucleicos da Yersinia pestis, numa amostra biológica",
+          "2": "Resposta imunitária específica ao antigénio F1 da Yersinia pestis"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)",
+      "1": "Transmissão de animais a seres humanos",
+      "2": "Exposição laboratorial (a Yersinia pestis)",
+      "3": "Exposição a uma fonte comum"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
