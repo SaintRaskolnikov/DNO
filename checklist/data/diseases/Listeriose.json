@@ -47,6 +47,7 @@
       }
     },
       "listeriose_neonatal": {
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
       "minimo_requerido": 1,
       "grupos": {
         "confirmado": {
