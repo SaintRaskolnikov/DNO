@@ -147,7 +147,7 @@ def checklist_view(request, dno):
                 classificacao_atual = "Provável"
             elif classificacao_atual =="possivel":
                 classificacao_atual = "Possível"
-            else
+            else:
                 pass
             
 
