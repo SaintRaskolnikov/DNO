@@ -1,0 +1,53 @@
+{
+  "doenca": "Poliomielite Aguda",
+  "criterios_clinicos": {
+    "criterios": {
+      "descricao": "Qualquer pessoa com idade inferior a 15 anos com Paralisia Flácida Aguda (PFA) OU qualquer pessoa em quem o médico suspeite de poliomielite",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Pessoa com idade inferior a 15 anos com Paralisia Flácida Aguda (PFA)",
+        "1": "Pessoa em quem o médico suspeite de poliomielite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "poliovirus": {
+      "minimo_requerido": 1,
+      "nota": "Os testes laboratoriais têm de ser realizados no laboratório Nacional para a vigilância da poliomielite do Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA), certificado pela Organização Mundial da Saúde.",
+      "grupos": {
+        "confirmado": {
+          "0": "Identificação por diferenciação intratípica do vírus da poliomielite selvagem, numa amostra de fezes, por um laboratório da poliomielite acreditado pela Organização Mundial da Saúde",
+          "1": "Identificação por diferenciação intratípica do vírus da poliomielite do tipo Sabin discordante, numa amostra de fezes (pelo menos 85% de semelhança com o vírus vacinal nas sequências nucleotídicas da secção VP1), por um laboratório da poliomielite acreditado pela Organização Mundial da Saúde",
+          "2": "Identificação por diferenciação intratípica de Poliovírus do tipo Sabin, a partir de uma amostra de fezes, por um laboratório da poliomielite acreditado pela Organização Mundial da Saúde (para o poliovírus derivado da vacina, uma diferença de 1% a 15% na sequência VP1 comparada com o vírus vacinal do mesmo serotipo)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Antecedentes de viagem a uma área endémica de poliomielite ou a uma área onde exista circulação de poliovírus (suspeita ou confirmada)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
