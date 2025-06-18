@@ -1,0 +1,61 @@
+{
+  "doenca": "Rubéola, excluindo Rubéola Congénita",
+  "criterios_clinicos": {
+    "exantema": {
+      "descricao": "Início brusco de exantema maculopapular generalizado E pelo menos um dos cinco critérios seguintes",
+      "condicao_base": {
+        "0": "Início brusco de exantema maculopapular generalizado"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Adenopatia cervical",
+        "1": "Adenopatia suboccipital",
+        "2": "Adenopatia retro-auricular",
+        "3": "Artralgia",
+        "4": "Artrite"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "rubeola": {
+      "minimo_requerido": 1,
+      "nota": "Testes realizados no Laboratório Nacional de Referência para as Doenças Evitáveis pela Vacinação (INSA). Interpretar conforme estado vacinal.",
+      "grupos": {
+        "confirmado": {
+          "0": "Isolamento do vírus da rubéola a partir de amostra biológica",
+          "1": "Deteção de ácidos nucleicos do vírus da rubéola em amostra biológica",
+          "2": "Deteção de anticorpos IgM para o vírus da rubéola e IgG de baixa avidez",
+          "3": "Seroconversão IgG da rubéola ou aumento significativo do título de anticorpos IgG em amostras emparelhadas"
+        },
+        "provavel": {}
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Transmissão pessoa a pessoa",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos (pessoa a pessoa)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
