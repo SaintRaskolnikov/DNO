@@ -1,0 +1,35 @@
+{
+  "doenca": "Paralisia Flácida Aguda (PFA)",
+  "criterios_clinicos": {
+    "principal": {
+      "descricao": "Pessoa (idade inferior a 15 anos), com início súbito de fraqueza muscular, incluindo fraqueza dos músculos respiratórios e da deglutição, progredindo para gravidade máxima em dias ou semanas. Paralisia caracteriza-se pela ausência de espasticidade ou sinais de lesão do sistema nervoso central, como hiperflexia, clónus ou sinal de Babinski.",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Início súbito de fraqueza muscular em pessoa com menos de 15 anos",
+        "1": "Fraqueza dos músculos respiratórios e da deglutição",
+        "2": "Progressão para gravidade máxima em dias ou semanas",
+        "3": "Ausência de espasticidade ou sinais de lesão do SNC (hiperflexia, clónus, sinal de Babinski)"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "nao_aplicavel": {
+      "nota": "Qualquer caso de PFA deve ser seguido (follow-up) aos 60 dias. Este seguimento deve ser notificado na plataforma SINAVE.",
+      "minimo_requerido": 0,
+      "grupos": {}
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    }
+  }
+}
