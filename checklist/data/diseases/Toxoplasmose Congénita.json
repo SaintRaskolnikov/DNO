@@ -1,0 +1,31 @@
+{
+  "doenca": "Toxoplasmose Congénita",
+  "criterios_clinicos": {},
+  "criterios_laboratoriais": {
+    "toxoplasma_gondii": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Demonstração da presença de Toxoplasma gondii em tecidos ou fluidos corporais",
+          "1": "Deteção de ácidos nucleicos de Toxoplasma gondii numa amostra biológica",
+          "2": "Resposta imunitária específica a Toxoplasma gondii (IgM, IgG, IgA) num recém-nascido",
+          "3": "Títulos sempre estáveis de IgG de Toxoplasma gondii em lactentes (idade inferior a 12 meses)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "minimo_requerido": 0,
+    "criterios": {}
+  },
+  "classificacao_caso": {
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
