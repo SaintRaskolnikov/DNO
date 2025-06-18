@@ -1,0 +1,68 @@
+{
+  "doenca": "Varíola",
+  "criterios_clinicos": {
+    "tipica": {
+      "descricao": "Febre E exantema caracterizado por vesículas ou pústulas com a mesma fase de desenvolvimento e distribuição centrífuga",
+      "condicao_base": {
+        "0": "Febre"
+      },
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Exantema caracterizado por vesículas ou pústulas com a mesma fase de desenvolvimento e distribuição centrífuga"
+      }
+    },
+    "atipica": {
+      "descricao": "Formas atípicas caracterizadas por, pelo menos, um dos seguintes",
+      "minimo_requerido": 1,
+      "criterios": {
+        "0": "Lesões hemorrágicas",
+        "1": "Lesões planas de aspeto aveludado que não evoluem para vesículas",
+        "2": "Erupção sinusoidal",
+        "3": "Forma mais atenuada (varíola menor ou alastrim)"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "orthopoxvirus": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA). Os resultados laboratoriais devem ser interpretados de acordo com o estado vacinal.",
+      "grupos": {
+        "provavel": {
+          "0": "Identificação de partículas de Orthopoxvirus ao microscópio eletrónico"
+        },
+        "confirmado": {
+          "0": "Isolamento do vírus da varíola a partir de uma amostra biológica, seguido de sequenciação",
+          "1": "Deteção de ácidos nucleicos do vírus da varíola numa amostra biológica, seguida de sequenciação"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Pelo menos um dos seguintes",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Transmissão entre seres humanos",
+      "1": "Exposição laboratorial (ao vírus da varíola)"
+    }
+  },
+  "classificacao_caso": {
+    "possivel": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 1,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 0,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
