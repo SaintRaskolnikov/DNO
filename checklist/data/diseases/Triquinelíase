@@ -1,0 +1,53 @@
+{
+  "doenca": "Triquinelíase",
+  "criterios_clinicos": {
+    "triquinelíase": {
+      "descricao": "Qualquer pessoa que preencha pelo menos três dos seis critérios seguintes",
+      "minimo_requerido": 3,
+      "criterios": {
+        "0": "Febre",
+        "1": "Mialgias",
+        "2": "Diarreia",
+        "3": "Edema facial",
+        "4": "Eosinofilia",
+        "5": "Hemorragias subconjuntivais, subungueais e retinianas"
+      }
+    }
+  },
+  "criterios_laboratoriais": {
+    "trichinella": {
+      "minimo_requerido": 1,
+      "nota": "Devem ser enviadas amostras biológicas para confirmação/serotipagem pelo Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA).",
+      "grupos": {
+        "provavel": {},
+        "confirmado": {
+          "0": "Confirmação da presença de larvas de Trichinella spp. em biópsias musculares",
+          "1": "Deteção de anticorpos séricos específicos de Trichinella spp. por teste serológico de alta sensibilidade (ELISA, HA, IF, etc) e confirmação por teste de alta especificidade (Immunoblot)"
+        }
+      }
+    }
+  },
+  "criterios_epidemiologicos": {
+    "descricao": "Critérios epidemiológicos relevantes para o caso",
+    "minimo_requerido": 1,
+    "criterios": {
+      "0": "Exposição a alimentos contaminados",
+      "1": "Exposição a uma fonte comum"
+    }
+  },
+  "classificacao_caso": {
+
+    "provavel": {
+      "cli": 1,
+      "epi": 1,
+      "lab_prov": 0,
+      "lab_conf": 0
+    },
+    "confirmado": {
+      "cli": 1,
+      "epi": 0,
+      "lab_prov": 0,
+      "lab_conf": 1
+    }
+  }
+}
