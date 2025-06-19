@@ -33,25 +33,21 @@
     }
   },
   "criterios_epidemiologicos": {
-    "grupos": {
-      "grave": {
+    "MERS": {
+
         "minimo_requerido": 1,
         "criterios": {
           "0": "Antecedentes de viagem ou residência nos 14 dias anteriores a sintoma para área com MERS-CoV ou circulação em dromedários",
           "1": "Contacto próximo nos 14 dias anteriores com doente respiratório agudo de área afetada",
           "2": "Pertencer a cluster de doença respiratória aguda nos 14 dias antes do início dos sintomas",
           "3": "Profissional de saúde numa unidade de tratamento de doença respiratória aguda grave",
-          "4": "Contacto direto com dromedário ou consumo de produtos crus (carne, leite) em área afetada nos 14 dias anteriores"
-        }
-      },
-      "moderada": {
-        "minimo_requerido": 1,
-        "criterios": {
-          "0": "História de permanência (paciente, profissional ou visitante) em unidade de saúde em área afetada nos 14 dias anteriores",
-          "1": "Contacto próximo com caso confirmado e sintomático de MERS-CoV nos 14 dias anteriores"
+          "4": "Contacto direto com dromedário ou consumo de produtos crus (carne, leite) em área afetada nos 14 dias anteriores",
+          "5": "História de permanência (paciente, profissional ou visitante) em unidade de saúde em área afetada nos 14 dias anteriores (doença moderada)",
+          "6": "Contacto próximo com caso confirmado e sintomático de MERS-CoV nos 14 dias anteriores (doença moderada)"
         }
       }
-    }
+
+    
   },
   "classificacao_caso": {
     "provavel": {
