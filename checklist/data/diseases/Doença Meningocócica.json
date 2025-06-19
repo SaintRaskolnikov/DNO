@@ -1,13 +1,16 @@
 {
   "doenca": "Doença Meningocócica",
   "criterios_clinicos": {
+    "meningococo": {
+      "minimo_requerido": 1,
     "criterios": {
       "0": "Sinais meníngeos",
       "1": "Exantema petequial",
       "2": "Choque séptico",
       "3": "Artrite séptica"
-    },
-    "minimo_requerido": 1
+    
+    }
+    }
   },
   "criterios_laboratoriais": {
     "meningococo": {
