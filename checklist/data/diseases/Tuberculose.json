@@ -1,7 +1,7 @@
 {
   "doenca": "Tuberculose",
   "criterios_clinicos": {
-    "clinico_terapia": {
+    "clínicos": {
       "descricao": "Sinais/sintomas/imagens radiológicas compatíveis com tuberculose ativa E decisão médica de administrar ciclo completo de terapia antituberculose",
       "minimo_requerido": 2,
       "criterios": {
