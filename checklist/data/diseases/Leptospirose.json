@@ -43,12 +43,7 @@
     }
   },
   "classificacao_caso": {
-    "possivel": {
-      "cli": 0,
-      "epi": 0,
-      "lab_prov": 0,
-      "lab_conf": 0
-    },
+
     "provavel": {
       "cli": 1,
       "epi": 1,
