@@ -27,8 +27,7 @@
     "criterios": {}
   },
   "classificacao_caso": {
-    "possivel": {},
-    "provavel": {},
+
     "confirmado": {
       "cli": 0,
       "epi": 0,
