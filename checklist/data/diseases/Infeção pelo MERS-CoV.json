@@ -2,7 +2,7 @@
   "doenca": "Infeção pelo MERS-CoV",
   "criterios_clinicos": {
     "mers_cov": {
-      "grupos": {
+
         "grave": {
           "descricao": "Febre E pneumonia ou Síndrome da Insuficiência Respiratória Aguda (baseado em dados clínicos e/ou radiológicos) E sem outra etiologia que explique o quadro",
           "minimo_requerido": 1,
@@ -18,7 +18,7 @@
             "1": "Tosse e/ou dispneia"
           }
         }
-      }
+      
     }
   },
   "criterios_laboratoriais": {
@@ -54,7 +54,6 @@
     }
   },
   "classificacao_caso": {
-    "possivel": {},
     "provavel": {
       "cli": 1,
       "epi": 1,
